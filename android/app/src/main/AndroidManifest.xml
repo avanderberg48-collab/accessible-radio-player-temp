@@ -12,7 +12,8 @@
     <application
         android:label="Accessible Radio Player"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:exported="true"> <!-- Added for safety, though usually not needed on application tag -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -32,7 +33,7 @@
             </intent-filter>
         </activity>
         
-        <!-- Audio Service for background playback -->
+        <!-- Audio Service for background playback - Must have exported="true" for API 31+ -->
         <service android:name="com.ryanheise.audioservice.AudioService"
             android:foregroundServiceType="mediaPlayback"
             android:exported="true">
