@@ -1,0 +1,45 @@
+name: accessible_radio_player
+description: "Accessible Radio Player - Stream, manage, and record online radio stations with full accessibility support."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI Components
+  cupertino_icons: ^1.0.8
+  
+  # Audio Streaming
+  just_audio: ^0.9.40
+  audio_service: ^0.18.15
+  
+  # Recording
+  record: ^5.1.2
+  path_provider: ^2.1.4
+  permission_handler: ^11.3.1
+  
+  # State Management
+  provider: ^6.1.2
+  
+  # Storage
+  shared_preferences: ^2.3.2
+  sqflite: ^2.3.3+1
+  
+  # HTTP
+  http: ^1.2.2
+  
+  # Accessibility
+  flutter_tts: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
